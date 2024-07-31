@@ -12,41 +12,140 @@
 @import "utilities";
 
 // Layout & components
+/* #region root */
 @import "root";
-@import "reboot";
-@import "type";
-@import "images";
-@import "containers";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "transitions";
-@import "dropdown";
-@import "button-group";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "accordion";
-@import "breadcrumb";
-@import "pagination";
-@import "badge";
-@import "alert";
-@import "progress";
-@import "list-group";
-@import "close";
-@import "toasts";
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
-@import "spinners";
-@import "offcanvas";
-@import "placeholders";
+/* #endregion root */
 
+/* #region reboot */
+@import "reboot";
+/* #endregion reboot */
+
+/* #region type */
+@import "type";
+/* #endregion type */
+
+/* #region images */
+@import "images";
+/* #endregion images */
+
+/* #region containers */
+@import "containers";
+/* #endregion containers */
+
+/* #region grid */
+@import "grid";
+/* #endregion grid */
+
+/* #region tables */
+@import "tables";
+/* #endregion tables */
+
+/* #region forms */
+@import "forms";
+/* #endregion forms */
+
+/* #region buttons */
+@import "buttons";
+/* #endregion buttons */
+
+/* #region transitions */
+@import "transitions";
+/* #endregion transitions */
+
+/* #region dropdown */
+@import "dropdown";
+/* #endregion dropdown */
+
+/* #region button-group */
+@import "button-group";
+/* #endregion button-group */
+
+/* #region nav */
+@import "nav";
+/* #endregion nav */
+
+/* #region navbar */
+@import "navbar";
+/* #endregion navbar */
+
+/* #region card */
+@import "card";
+/* #endregion card */
+
+/* #region accordion */
+@import "accordion";
+/* #endregion accordion */
+
+/* #region breadcrumb */
+@import "breadcrumb";
+/* #endregion breadcrumb */
+
+/* #region pagination */
+@import "pagination";
+/* #endregion pagination */
+
+/* #region badge */
+@import "badge";
+/* #endregion badge */
+
+/* #region alert */
+@import "alert";
+/* #endregion alert */
+
+/* #region progress */
+@import "progress";
+/* #endregion progress */
+
+/* #region list-group */
+@import "list-group";
+/* #endregion list-group */
+
+/* #region close */
+@import "close";
+/* #endregion close */
+
+/* #region toasts */
+@import "toasts";
+/* #endregion toasts */
+
+/* #region modal */
+@import "modal";
+/* #endregion modal */
+
+/* #region tooltip */
+@import "tooltip";
+/* #endregion tooltip */
+
+/* #region popover */
+@import "popover";
+/* #endregion popover */
+
+/* #region carousel */
+@import "carousel";
+/* #endregion carousel */
+
+/* #region spinners */
+@import "spinners";
+/* #endregion spinners */
+
+/* #region offcanvas */
+@import "offcanvas";
+/* #endregion offcanvas */
+
+/* #region placeholders */
+@import "placeholders";
+/* #endregion placeholders */
+
+
+/* #region Helpers */
 // Helpers
 @import "helpers";
+/* #endregion Helpers */
 
+
+/* #region Utilities */
 // Utilities
 @import "utilities/api";
+/* #endregion Utilities */
+
 // scss-docs-end import-stack
