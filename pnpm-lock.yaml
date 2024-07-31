@@ -8,7 +8,7 @@ importers:
 
   .: {}
 
-  examples/Bootstrap-Source-code-learning-5.3.3:
+  examples/Bootstrap-Source-code-learning:
     devDependencies:
       '@babel/cli':
         specifier: ^7.23.9
