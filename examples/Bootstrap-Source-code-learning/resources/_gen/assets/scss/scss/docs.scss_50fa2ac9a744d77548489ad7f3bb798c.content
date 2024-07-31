@@ -1158,6 +1158,17 @@
   color: var(--bs-emphasis-color);
 }
 
+.bd-links-nav > li li {
+  list-style: decimal-leading-zero;
+  list-style-position: inside;
+}
+
+.bd-links-nav > li li::marker {
+  font-size: 13px;
+  color: #afafaf;
+  font-weight: 700;
+}
+
 @media (max-width: 991.98px) {
   .bd-links-nav {
     font-size: .875rem;
@@ -1184,7 +1195,6 @@
 .bd-links-link {
   padding: .1875rem .5rem;
   margin-top: .125rem;
-  margin-left: 1.125rem;
   color: var(--bs-body-color);
   text-decoration: none;
 }
