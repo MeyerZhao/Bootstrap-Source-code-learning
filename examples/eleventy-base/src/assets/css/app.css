@@ -1,11 +1,11 @@
 @import 'tailwindcss/base';
 @import "tailwindcss/components";
-@import "./components/Typography.css";
-@import "./components/Color.css";
-@import "./components/Row.css";
-@import "./components/Container.css";
-@import "./components/Accordion.css";
-@import "./components/Alerts.css";
+@import "./components-v1/Typography.css";
+@import "./components-v1/Color.css";
+@import "./components-v1/Row.css";
+@import "./components-v1/Container.css";
+@import "./components-v1/Accordion.css";
+@import "./components-v1/Alerts.css";
 @import "tailwindcss/utilities";
 
 @layer base {
