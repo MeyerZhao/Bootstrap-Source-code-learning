@@ -30,11 +30,12 @@
     if (theme === 'auto') {
       const windowTheme = (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       // document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
-      $html.setAttribute('data-mode', windowTheme)
+      $html.setAttribute('data-bs-theme', windowTheme)
       // $html.classList.add(windowTheme)
     } else {
       // document.documentElement.setAttribute('data-bs-theme', theme)
-      $html.dataset.mode = theme;
+      $html.setAttribute('data-bs-theme', theme)
+      // $html.dataset.mode = theme;
       // $html.classList.add(theme)
     }
   }

@@ -2,14 +2,14 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  // prefix: 'tw-',
+  prefix: 'tw-',
   content: ["./src/**/*.{html,js,njk}"],
   corePlugins: {
     preflight: false,
     container: false
   },
   // darkMode: 'selector',
-  darkMode: ['selector', '[data-mode="dark"]'],
+  darkMode: ['selector', '[data-bs-theme="dark"]'],
   theme: {
     screens: {
       sm: '576px',
