@@ -1,3 +1,5 @@
+
+/* #region alert */
 .alert {
   --bs-alert-bg: transparent;
   --bs-alert-padding-x: 1rem;
@@ -92,3 +94,5 @@
   --bs-alert-border-color: var(--bs-dark-border-subtle);
   --bs-alert-link-color: var(--bs-dark-text-emphasis);
 }
+
+/* #endregion alert */

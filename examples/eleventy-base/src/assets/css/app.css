@@ -1,12 +1,42 @@
-@import 'tailwindcss/base';
+@import "tailwindcss/base";
+@import "./base/root.css";
+@import "./base/reboot.css";
+@import "./base/type.css";
+@import "./base/img.css";
+@import "./base/container.css";
+@import "./base/grid.css";
+@import "./base/table.css";
+@import "./base/form.css";
+
 @import "tailwindcss/components";
-@import "./components/Typography.css";
-@import "./components/Color.css";
-@import "./components/Row.css";
-@import "./components/Container.css";
-@import "./components/Accordion.css";
-@import "./components/Alerts.css";
+@import "./components/accordion.css";
+@import "./components/alert.css";
+@import "./components/badge.css";
+@import "./components/breadcrumb.css";
+@import "./components/btn.css";
+@import "./components/btn-group.css";
+@import "./components/card.css";
+@import "./components/carousel.css";
+@import "./components/btn-close.css";
+@import "./components/collapse.css";
+@import "./components/dropdown.css";
+@import "./components/list-group.css";
+@import "./components/modal.css";
+@import "./components/navbar.css";
+@import "./components/nav.css";
+@import "./components/offcanvas.css";
+@import "./components/pagination.css";
+@import "./components/placeholders.css";
+@import "./components/popover.css";
+@import "./components/progress.css";
+/* @import "./components/scrollspy.css"; */
+@import "./components/spinner.css";
+@import "./components/toast.css";
+@import "./components/tooltip.css";
+
 @import "tailwindcss/utilities";
+@import "./utilities/helpers.css";
+@import "./utilities/utilities.css";
 
 @layer base {
   :root {
@@ -48,7 +78,8 @@
     --bs-border-radius: 0.375rem;
   }
 
-  :root,[data-bs-theme=light] {
+  :root,
+  [data-bs-theme="light"] {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -80,14 +111,14 @@
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
-    --bs-primary-rgb: 13,110,253;
-    --bs-secondary-rgb: 108,117,125;
-    --bs-success-rgb: 25,135,84;
-    --bs-info-rgb: 13,202,240;
-    --bs-warning-rgb: 255,193,7;
-    --bs-danger-rgb: 220,53,69;
-    --bs-light-rgb: 248,249,250;
-    --bs-dark-rgb: 33,37,41;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
     --bs-primary-text-emphasis: #052c65;
     --bs-secondary-text-emphasis: #2b2f32;
     --bs-success-text-emphasis: #0a3622;
@@ -112,35 +143,43 @@
     --bs-danger-border-subtle: #f1aeb5;
     --bs-light-border-subtle: #e9ecef;
     --bs-dark-border-subtle: #adb5bd;
-    --bs-white-rgb: 255,255,255;
-    --bs-black-rgb: 0,0,0;
-    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+      "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0)
+    );
     --bs-body-font-family: var(--bs-font-sans-serif);
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
-    --bs-body-color-rgb: 33,37,41;
+    --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg: #fff;
-    --bs-body-bg-rgb: 255,255,255;
+    --bs-body-bg-rgb: 255, 255, 255;
     --bs-emphasis-color: #000;
-    --bs-emphasis-color-rgb: 0,0,0;
+    --bs-emphasis-color-rgb: 0, 0, 0;
     --bs-secondary-color: rgba(33, 37, 41, 0.75);
-    --bs-secondary-color-rgb: 33,37,41;
+    --bs-secondary-color-rgb: 33, 37, 41;
     --bs-secondary-bg: #e9ecef;
-    --bs-secondary-bg-rgb: 233,236,239;
+    --bs-secondary-bg-rgb: 233, 236, 239;
     --bs-tertiary-color: rgba(33, 37, 41, 0.5);
-    --bs-tertiary-color-rgb: 33,37,41;
+    --bs-tertiary-color-rgb: 33, 37, 41;
     --bs-tertiary-bg: #f8f9fa;
-    --bs-tertiary-bg-rgb: 248,249,250;
+    --bs-tertiary-bg-rgb: 248, 249, 250;
     --bs-heading-color: inherit;
     --bs-link-color: #0d6efd;
-    --bs-link-color-rgb: 13,110,253;
+    --bs-link-color-rgb: 13, 110, 253;
     --bs-link-decoration: underline;
     --bs-link-hover-color: #0a58ca;
-    --bs-link-hover-color-rgb: 10,88,202;
+    --bs-link-hover-color-rgb: 10, 88, 202;
     --bs-code-color: #d63384;
     --bs-highlight-color: #212529;
     --bs-highlight-bg: #fff3cd;
@@ -165,7 +204,7 @@
     --bs-form-valid-color: #198754;
     --bs-form-valid-border-color: #198754;
     --bs-form-invalid-color: #dc3545;
-    --bs-form-invalid-border-color: #dc3545
+    --bs-form-invalid-border-color: #dc3545;
   }
 
   /* @media (prefers-color-scheme: dark) {
@@ -179,19 +218,7 @@
     --background: #050a34;
     --foreground: #e2e8f0;
   }
-
 }
 
 
-
-.dropdown-menu:not(.show) {
-  display: none;
-}
-
-.dropdown-menu.show {
-  position: absolute;
-  inset: 0 auto auto 0;
-  background-color: #fff;
-  border-radius: 1rem;
-}
-
+/* this is test15 */

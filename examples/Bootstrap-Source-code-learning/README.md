@@ -1,7 +1,11 @@
 # Bootstrap-Source-code-learning
 Learn Bootstrap source code and implement it using tailwindcss
 
-### Using npm scripts
+## 文档侧边栏设置
+
+[sidebar](site/data/sidebar.yml)
+
+## Using npm scripts
 
 | Task               | Description                                                                           |
 | ------------------ | ------------------------------------------------------------------------------------- |
@@ -9,3 +13,4 @@ Learn Bootstrap source code and implement it using tailwindcss
 | npm run dist       | Creates the dist/ directory with compiled files. Uses Sass, Autoprefixer, and terser. |
 | npm test           | Runs tests locally after running npm run dist                                         |
 | npm run docs-serve | Builds and runs the documentation locally.                                            |
+
