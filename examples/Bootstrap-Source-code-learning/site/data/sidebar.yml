@@ -73,7 +73,7 @@
   icon_color: cyan
   pages:
     - title: Accordion
-    - title: Alerts
+    - title: Alert
     - title: Badge
     - title: Breadcrumb
     - title: Buttons
